@@ -456,7 +456,7 @@ function evm() {
 
           *)
               echo "ARG: $1"
-              extras="$extras $1"
+              extras=$extras\ $1
               shift
               #evm_install $version -n $@
           ;;
